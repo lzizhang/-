@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/commonality/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/css/register.css">
+	<link rel="shortcut icon" type="text/css" href="../img/logo/logo.ico">
+	<title>用户注册 - 大卖街</title>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="nav"></div>
+	<div id="scroll_btn"></div>
+	<div id="content">
+		<form>
+			<p>用户注册</p>
+			<ul>
+				<li>
+					电子邮箱
+					<input type="text" placeholder="请输入Email地址, 如：8888@qq.com" id="email">
+					<p>请输入您的Email地址</p>
+				</li>
+				<li>
+					密 码
+					<input type="password" maxlength="20" placeholder="请输入密码 6-20位" id="password">
+					<p>密码不能小于6位</p>
+				</li>
+				<li>
+					确认密码
+					<input type="password" maxlength="20" placeholder="请再次输入密码" id="verifyPassword">
+					<p>两次输入密码不一致</p>
+				</li>
+				<li class="yzm">
+					验证码
+					<span id="v_container"></span>
+					<input type="text" placeholder="请输入验证码" id="verificationCode">
+					<p>验证码错误</p>
+				</li>
+			</ul>
+			<input type="submit" value="注册" class="register" id="register">
+		</form>
+	</div>
+	<div id="footer"></div>
+</body>
+</html>
+<script src="../js/lib/jquery-1.11.3.js"></script>
+<script src="../js/js/commonality/common.js"></script>
+<script src="../js/js/register.js"></script>
+<script src="../js/js/YZM.js"></script>
